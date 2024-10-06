@@ -89,4 +89,4 @@ if selected_stock_code:
 
     st.pyplot(fig)
 
-st.write("Note: Ensure the stock code exists in the dataset.")
+st.write("Note: Ensure the Stock Code exists in the dataset.")
