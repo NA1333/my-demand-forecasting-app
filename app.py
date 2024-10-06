@@ -5,9 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load the cleaned merged file
-file_path = r"C:\Users\Chish\OneDrive\Pictures\ASSINGMENT FILES\Cleaned_MergedTransactionFile12.csv"
-merged_data = pd.read_csv(file_path)
+# Load the cleaned merged file from Google Drive
+file_url = 'https://drive.google.com/uc?id=1N1khETHukgorjixdrC0Pe_x2U3j5a_ce'  # Direct download link
+merged_data = pd.read_csv(file_url)
 
 # Prepare the data
 merged_data['Invoice Date'] = pd.to_datetime(merged_data['Invoice Date'], errors='coerce')
